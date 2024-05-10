@@ -1,10 +1,10 @@
-from urllib.request import urlopen
+import requests
 
-# just getting started
-url = urlopen("https://www.imdb.com")
+from bs4 import BeautifulSoup
 
-html_bytes = url.read()
+import pandas as pd
 
-html = html_bytes.decode("utf-8")
+import time
 
-print(html)
+url = "https://imbd.com"
+
