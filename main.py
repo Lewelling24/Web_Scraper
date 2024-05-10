@@ -1,7 +1,7 @@
 from urllib.request import urlopen
 
 # just getting started
-url = urlopen("https://google.com")
+url = urlopen("https://www.imdb.com")
 
 html_bytes = url.read()
 
