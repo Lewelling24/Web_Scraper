@@ -8,3 +8,6 @@ import time
 
 url = "https://imbd.com"
 
+response = requests.get(url)
+
+print(response)
