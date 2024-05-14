@@ -10,4 +10,6 @@ url = "https://imbd.com"
 
 response = requests.get(url)
 
-print(response)
+parse = BeautifulSoup(response.content, 'html.parser')
+
+print(parse)
