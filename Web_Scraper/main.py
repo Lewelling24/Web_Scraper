@@ -6,10 +6,14 @@ import pandas as pd
 
 import time
 
-url = "https://imbd.com"
+url = "https://www.imdb.com/chart/top"
 
 response = requests.get(url)
 
 parse = BeautifulSoup(response.content, 'html.parser')
 
+# extract info
+movies = []
+
+for row in parse.select('tbody.lister-list tr'):
 print(parse)
