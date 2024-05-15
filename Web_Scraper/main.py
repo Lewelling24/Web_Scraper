@@ -16,4 +16,5 @@ parse = BeautifulSoup(response.content, 'html.parser')
 movies = []
 
 for row in parse.select('tbody.lister-list tr'):
+    title = row.find('td', class_='titleColumn').find('a').get_text()
 print(parse)
