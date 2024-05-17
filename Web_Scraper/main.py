@@ -25,4 +25,10 @@ for row in parse.select('tbody.lister-list tr'):
     rating = row.find('td', class_='ratingColumn imdbRating').find('strong').get_text()
     movies.append([title, year, rating])
 
+# Store the information in a pandas dataframe
+df = pd.DataFrame(movies, columns=['Title', 'Year', 'Rating'])
+
+# Add a delay between requests to avoid overwhelming the website with requests
+time.sleep(1)
+
 print(movies)
