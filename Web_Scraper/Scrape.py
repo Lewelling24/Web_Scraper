@@ -25,7 +25,7 @@ def scrape(url):
     
     return movies    
     # Add a delay between requests to avoid overwhelming the website with requests
-    time.sleep(1)
+    
 
 
 def store(movies):
