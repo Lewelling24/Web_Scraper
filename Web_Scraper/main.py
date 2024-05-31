@@ -5,6 +5,6 @@ import time
 
 url = "https://www.imdb.com/chart/top"
 
-store = scrape(url)
+store_var = scrape(url)
 
-print(store)
+print(store_var)
